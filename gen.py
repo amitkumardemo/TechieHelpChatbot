@@ -27,17 +27,17 @@ def techiehelp_responses(user_query):
     if "about techiehelp" in query or "techiehelp" in query:
         return (
             "TechieHelp is a dynamic platform designed to empower students and professionals by providing a range of services and opportunities. Here's what we offer:\n\n"
-            "- **Web Development**: We create custom websites that are responsive, user-friendly, and tailored to your business needs. Learn more about our [Web Development Services](https://techiehelp.com/web-development).\n"
-            "- **App Development**: Our team develops high-quality mobile applications for both iOS and Android platforms. Explore our [App Development Services](https://techiehelp.com/app-development).\n"
-            "- **SEO Services**: Improve your website's visibility and ranking on search engines with our expert SEO services. Discover more about our [SEO Services](https://techiehelp.com/seo).\n"
-            "- **UI/UX Design**: We offer design services to enhance user experience and create visually appealing interfaces. Check out our [UI/UX Design Services](https://techiehelp.com/ui-ux-design).\n"
-            "- **Admissions Support**: Get assistance with admissions for various educational programs and courses. Find out more about our [Admissions Support](https://techiehelp.com/admissions).\n\n"
-            "TechieHelp was founded by Amit Kumar, a passionate front-end developer and AI enthusiast. Amit Kumar is committed to bridging the gap between academic learning and real-world experience. Connect with Amit on [LinkedIn](https://linkedin.com/in/amit-kumar).\n\n"
-            "For more information, visit our [website](https://techiehelp.com).\n\n"
+            "- **Web Development**: We create custom websites that are responsive, user-friendly, and tailored to your business needs. Learn more about our [Web Development Services](https://techiehelpt.netlify.app/).\n"
+            "- **App Development**: Our team develops high-quality mobile applications for both iOS and Android platforms. Explore our [App Development Services](https://techiehelpt.netlify.app/).\n"
+            "- **SEO Services**: Improve your website's visibility and ranking on search engines with our expert SEO services. Discover more about our [SEO Services](https://techiehelpt.netlify.app/).\n"
+            "- **UI/UX Design**: We offer design services to enhance user experience and create visually appealing interfaces. Check out our [UI/UX Design Services](https://techiehelpt.netlify.app/).\n"
+            "- **Admissions Support**: Get assistance with admissions for various educational programs and courses. Find out more about our [Admissions Support](https://techiehelpt.netlify.app/).\n\n"
+            "TechieHelp was founded by Amit Kumar, a passionate front-end developer and AI enthusiast. Amit Kumar is committed to bridging the gap between academic learning and real-world experience. Connect with Amit on [LinkedIn](https://www.linkedin.com/in/amit-kumar-686196225/).\n\n"
+            "For more information, visit our [website](https://techiehelpt.netlify.app/).\n\n"
             "Connect with us on social media:\n"
-            "- [Twitter](https://twitter.com/techiehelp)\n"
-            "- [LinkedIn](https://linkedin.com/company/techiehelp)\n"
-            "- [Facebook](https://facebook.com/techiehelp)"
+            "- [Twitter](https://www.linkedin.com/company/techiehelp/?viewAsMember=true)\n"
+            "- [LinkedIn](https://www.linkedin.com/company/techiehelp/?viewAsMember=true)\n"
+            "- [Facebook](https://www.facebook.com/profile.php?id=61564958817014)"
         )
     
     elif "services" in query:
@@ -48,7 +48,7 @@ def techiehelp_responses(user_query):
             "- **SEO Services**: Optimize your site for better search engine rankings.\n"
             "- **UI/UX Design**: Enhance user experience with our design services.\n"
             "- **Admissions Support**: Assistance with educational program admissions.\n\n"
-            "For more details, visit our [Services Page](https://techiehelp.com/services)."
+            "For more details, visit our [Services Page](https://techiehelpt.netlify.app/)."
         )
     elif "internships" in query:
         return (
@@ -57,7 +57,7 @@ def techiehelp_responses(user_query):
             "- **Web Development**: Hands-on experience with real-world web development tasks.\n"
             "- **App Development**: Develop mobile applications and gain industry insights.\n"
             "- **SEO and Digital Marketing**: Learn SEO and digital marketing strategies.\n\n"
-            "Explore our [Internships Page](https://techiehelp.com/internships) for more details."
+            "Explore our [Internships Page](https://techiehelpt.netlify.app/) for more details."
         )
     elif "mission" in query:
         return (
@@ -68,7 +68,7 @@ def techiehelp_responses(user_query):
             "TechieHelp was founded by Amit Kumar, a front-end developer and AI enthusiast. Amit Kumar is dedicated to creating a platform that facilitates skill development and career advancement. Connect with Amit Kumar on [LinkedIn](https://linkedin.com/in/amit-kumar)."
         )
     elif "contact" in query:
-        return "You can contact TechieHelp via email at info@techiehelp.com or visit our [website](https://techiehelp.com) for more information."
+        return "You can contact TechieHelp via email at info@techiehelp.com or visit our [website](https://techiehelpt.netlify.app/) for more information."
     else:
         # Use the generative model for other queries
         response = gen1.generate_content(("you are a friendly model", user_query)).text
