@@ -6,3 +6,6 @@ pillow
 pytesseract
 fpdf
 pandas
+pandas
+xlsxwriter
+
